@@ -1,0 +1,126 @@
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Libre Franklin";
+}
+
+.container{
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#illustration{
+    width: 100%;
+    height: auto;
+}
+
+#logo{
+    width: 15%;
+}
+
+.input-field{
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+#error-result{
+    text-align: left;
+    margin-left: 25px;
+    color: var(--Light-Red);
+    font-size: 0.8rem;
+    display: none;
+}
+
+.input-field input{
+    padding: 13px 30px 13px 30px;
+    font-family: "Libre Franklin";
+    font-weight: 300;
+    border-radius: 20px;
+    border: 1px var(--Gray) solid;
+    outline: none;
+    color: var(--Gray);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.input-field button{
+    padding: 13px 50px 13px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    font-family: "Libre Franklin";
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.input-field button:hover{
+    background-color: var(--Pale-Blue);
+    transform: scale(1.02);
+}
+
+h1{
+    font-weight: 300;
+}
+
+span{
+    font-weight: bold;
+}
+
+.fa.fa-facebook, .fa.fa-twitter, .fa.fa-instagram{
+    text-decoration: none;
+    border: 1px black solid;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.fa.fa-facebook:hover, .fa.fa-twitter:hover, .fa.fa-instagram:hover{
+    background-color: var(--Blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.attribution p{
+    font-size: 11px;
+    text-align: center;
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+.attribution{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        max-width: 80%;
+    }
+    button{
+        width: 100%;
+    }
+    input{
+        width: 78%;
+        margin-bottom: 10px;
+    }
+}
